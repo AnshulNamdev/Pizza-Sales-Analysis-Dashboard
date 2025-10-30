@@ -1,80 +1,110 @@
 🍕 Pizza Sales Analysis Dashboard
 📊 Project Overview
+The Pizza Sales Analysis Dashboard provides a comprehensive view of pizza sales performance, helping businesses analyze trends, customer preferences, and overall profitability.
+It is built using Power BI with dynamic visualizations, DAX calculations, and an interactive user interface for real-time insights.
 
-The Pizza Sales Analysis Dashboard is an interactive Power BI report designed to provide comprehensive insights into pizza sales performance. It helps analyze sales trends, product performance, and customer preferences across different pizza categories and sizes.
+🚀 Key Insights
 
-This dashboard empowers stakeholders to make data-driven decisions about product offerings, pricing strategies, and inventory management.
+  Total Sales: ₹817.86K
 
-🧩 Key Insights & Metrics
+  Total Orders: 48,620
 
-The dashboard highlights several important KPIs:
+  Total Quantity Sold: 49,574
 
-Metric	Description
-Sold Quantity	Total number of pizzas sold (49,574)
-Average Unit Price	Average price per pizza (16.49)
-Total Orders	Number of orders placed (48,620)
-Pizza Categories	Number of unique pizza categories (4)
-Total Sales	Total revenue generated (817.86K)
-Pizza Sizes	Available pizza sizes (5)
-📈 Dashboard Features
-🔹 1. KPI Cards
+  Average Unit Price: ₹16.49
 
-Displays key performance indicators including:
+  Pizza Categories: 4
 
-Sold Quantity
+  Pizza Sizes: 5
 
-Average Unit Price
 
-Total Orders
+🧠 Dashboard Features
+🔹 KPI Cards
+  
+  Displays key metrics such as Total Sales, Orders, Quantity Sold, and Average Price.
 
-Total Sales
+🔹 Top & Bottom Pizzas
+  
+   Top Performing Pizzas: Shows pizzas with the highest quantity sold and total sales. 
+    
+   Bottom Performing Pizzas: Displays the least-performing pizzas to identify improvement areas.
 
-Number of Categories and Sizes
+🔹 Category & Size Analysis
 
-🔹 2. Top Performing Pizzas
+   Donut charts represent total sales share by pizza category and pizza size.
 
-Two bar charts show:
+🔹 Time-Series Trends
 
-Top 10 Pizzas by Quantity Sold
+  Line charts show monthly trends of total orders, quantity, and sales.
 
-Top 10 Pizzas by Total Sales
+  Bar chart compares weekday-wise performance.
 
-🔹 3. Category & Size Analysis
 
-Pie charts illustrating:
+🔹 Filters Panel
+Interactive slicers for:
 
-Sales Distribution by Pizza Category
+  Date Range
 
-Sales Distribution by Pizza Size
+  Month
 
-🔹 4. Time-Series Analysis
+ Weekday Name
 
-A line chart visualizing:
+ Pizza Size
 
-Total Orders, Quantity, and Sales by Month
+ Pizza Category
 
-🔹 5. Weekday Performance
+  These allow users to dynamically explore data.
 
-A clustered bar chart comparing:
+🧮 Tools & Technologies
 
-Orders, Quantity, and Sales by Weekday Name
+  Power BI Desktop
 
-🧠 Business Insights
+  DAX (Data Analysis Expressions)
 
-Supreme and Veggie pizzas contribute the highest sales percentages.
+  Data Modeling
 
-Large (L) and Extra-Large (XL) pizzas generate the most revenue.
+  Excel / CSV Data Source
 
-Sales peak on weekends, especially Fridays and Saturdays.
 
-Consistent growth in orders observed over multiple months.
 
-🛠️ Tools & Technologies Used
+🗂️ Data Model
+The data model includes:
 
-Power BI Desktop – For dashboard creation and visualization
+  pizza_sales: Contains order details, prices, categories, sizes, and dates.
 
-Excel / CSV Dataset – Source data for pizza sales
+  Date Table: Used for time intelligence calculations.
 
-DAX (Data Analysis Expressions) – For calculated measures and KPIs
 
-Data Modeling – Established relationships among sales, categories, and dates
+Key Measures
+
+   Total Sales = SUM(pizza_sales[total_price])
+
+   Total Orders = COUNT(pizza_sales[order_id])
+
+   Total Quantity = SUM(pizza_sales[quantity])
+
+   Average Unit Price = AVERAGE(pizza_sales[unit_price])
+
+🖼️ Dashboard Preview
+🔸 Top Performing Pizzas
+
+🔸 Bottom Performing Pizzas
+
+🔸 Filters & Interaction Panel
+
+🎯 Insights & Outcomes
+
+   Identified best-selling pizzas by category and size.
+
+   Recognized low-performing pizzas for potential improvement.
+
+   Discovered peak sales days and seasonal demand patterns.
+
+  Provided actionable insights for pricing and marketing strategies.
+
+🧩 Future Enhancements
+
+* Integrate real-time data source (SQL  
+   Server / API).
+* Add customer demographic and regional  
+   analysis.
