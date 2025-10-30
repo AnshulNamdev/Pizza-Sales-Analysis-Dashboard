@@ -103,7 +103,7 @@ Key Measures
   Provided actionable insights for pricing and marketing strategies.
 
 
-  # PREVIEW 
+  # Picture Preview
   https://github.com/AnshulNamdev/Pizza-Sales-Analysis-Dashboard/blob/main/Snapshot%20of%20the%20Dashboard.png
 
 🧩 Future Enhancements
